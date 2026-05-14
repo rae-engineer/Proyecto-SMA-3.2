@@ -14,17 +14,17 @@ public class DecisionSystem : MonoBehaviour
         Instance = this;
     }
 
-    /// Registra una decisión tomada por el usuario.
+    /// Registra una decisiï¿½n tomada por el usuario.
     public void RegisterDecision(int decisionID)
     {
         if (!decisions.Contains(decisionID))
         {
             decisions.Add(decisionID);
-            Debug.Log("Decisión registrada: " + decisionID);
+            Debug.Log("Decisiï¿½n registrada: " + decisionID);
         }
     }
 
-    /// Evalúa si una viñeta puede desbloquearse.
+    /// Evalï¿½a si una viï¿½eta puede desbloquearse.
     public bool CheckUnlockConditions(List<int> requiredDecisions)
     {
         foreach (int decision in requiredDecisions)
@@ -39,5 +39,12 @@ public class DecisionSystem : MonoBehaviour
     public List<int> GetDecisions()
     {
         return decisions;
+    }
+
+    /// Limpia todas las decisiones registradas (Ãºtil al reiniciar la partida).
+    public void ReiniciarDecisiones()
+    {
+        decisions.Clear();
+        Debug.Log("DecisionSystem: decisiones reiniciadas.");
     }
 }
