@@ -91,6 +91,24 @@ namespace PixeLadder.EasyTransition
             StartCoroutine(TransitionRoutine(sceneName, effectToUse));
         }
 
+        public void LoadTransition(TransitionEffect effect = null)
+        {
+            if (isTransitioning)
+            {
+                Debug.LogWarning("SceneTransitioner: Transition already in progress.");
+                return;
+            }
+
+            var effectToUse = effect ?? defaultTransition;
+            if (effectToUse == null)
+            {
+                Debug.LogError("SceneTransitioner: No transition effect specified and no default is set.", this);
+                return;
+            }
+
+            StartCoroutine(Transition(effectToUse));
+        }
+
         private IEnumerator TransitionRoutine(string sceneName, TransitionEffect effect)
         {
             isTransitioning = true;
@@ -114,6 +132,39 @@ namespace PixeLadder.EasyTransition
 
             // Load the new scene
             yield return SceneManager.LoadSceneAsync(sceneName);
+
+            // Fire event
+            OnSceneLoaded?.Invoke();
+
+            // Run the fade-in animation
+            yield return effect.AnimateIn(transitionImageInstance);
+
+            // Cleanup
+            transitionImageInstance.gameObject.SetActive(false);
+            Destroy(materialInstance); // Clean up the material instance to prevent leaks
+            isTransitioning = false;
+        }
+
+        private IEnumerator Transition(TransitionEffect effect)
+        {
+            isTransitioning = true;
+            transitionImageInstance.gameObject.SetActive(true);
+
+            // 1. Create a fresh instance of the material for this specific transition
+            Material materialInstance = new Material(effect.transitionMaterial);
+
+            // 2. CRITICAL FIX: Pass the RectSize (Aspect Ratio) to the shader immediately
+            Rect rect = transitionImageInstance.rectTransform.rect;
+            materialInstance.SetVector(RectSizeID, new Vector4(rect.width, rect.height, 0, 0));
+
+            // 3. Apply custom effect properties
+            effect.SetEffectProperties(materialInstance);
+
+            // 4. Assign the material to the image
+            transitionImageInstance.material = materialInstance;
+
+            // Run the fade-out animation
+            yield return effect.AnimateOut(transitionImageInstance);
 
             // Fire event
             OnSceneLoaded?.Invoke();
