@@ -33,10 +33,33 @@ public class PantalladeCarga : MonoBehaviour
 
     private void Start()
     {
-        if (id == 0 || id == 1)
+        if (id == 0 )
         {
             StartLoading();
         }
+    }
+
+    public void HomeLoad()
+    {
+        sceneToLoad = "Home";
+
+        StartLoading();
+
+    }
+
+    public void Capitulo1Load()
+    {
+        sceneToLoad = "Capitulo1(Mariana)";
+
+        StartLoading();
+
+    }
+
+    public void Capitulo2Load()
+    {
+        sceneToLoad = "Capitulo2";
+
+        StartLoading();
     }
 
     public void load()
@@ -77,5 +100,7 @@ public class PantalladeCarga : MonoBehaviour
         SceneManager.LoadScene(sceneToLoad);
     }
 
-   
+
+    
+
 }

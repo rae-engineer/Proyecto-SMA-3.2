@@ -913,7 +913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &71727355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2957,7 +2957,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -3388,7 +3388,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -3782,7 +3782,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -4014,7 +4014,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -4346,6 +4346,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589160433}
   m_CullTransparentMesh: 1
+--- !u!114 &605641752 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2023873579488879459, guid: 47a738282cdeebf4892b0a79b15d3253, type: 3}
+  m_PrefabInstance: {fileID: 1941713799}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f75ba3cb3ad60488228074a65f16b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &612429312
 GameObject:
   m_ObjectHideFlags: 0
@@ -4618,79 +4629,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620066331}
   m_CullTransparentMesh: 1
---- !u!1001 &633009481
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1404130582737031980, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 1132462597}
-    - target: {fileID: 1991562850139269471, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1657.2085
-      objectReference: {fileID: 0}
-    - target: {fileID: 1991562850139269471, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 541.2295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1991562850139269471, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 13.7679825
-      objectReference: {fileID: 0}
-    - target: {fileID: 1991562850139269471, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1991562850139269471, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1991562850139269471, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1991562850139269471, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1991562850139269471, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1991562850139269471, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1991562850139269471, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8239896240714208196, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: m_Name
-      value: TransitionManager 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8890636034383824901, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: id
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8890636034383824901, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: loadingTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8890636034383824901, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-      propertyPath: sceneToLoad
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e38647e7575c8704aabb5985384af52e, type: 3}
 --- !u!1 &673786198
 GameObject:
   m_ObjectHideFlags: 0
@@ -5453,7 +5391,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -5873,7 +5811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &847441557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7252,46 +7190,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971735437}
   m_CullTransparentMesh: 1
---- !u!21 &973669383
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Default UI Material (Instance) (Instance)
-  m_Shader: {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &994798197
 GameObject:
   m_ObjectHideFlags: 0
@@ -7544,7 +7442,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -7701,7 +7599,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -8412,7 +8310,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -8996,7 +8894,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -9183,46 +9081,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131398979}
   m_CullTransparentMesh: 1
---- !u!21 &1132462597
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Default UI Material (Instance)
-  m_Shader: {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &1136520857
 GameObject:
   m_ObjectHideFlags: 0
@@ -9314,7 +9172,7 @@ GameObject:
   - component: {fileID: 1139127326}
   - component: {fileID: 1139127325}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: Cap 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12222,7 +12080,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -12502,21 +12360,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 522052954}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 605641752}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
-        m_MethodName: load
+        m_MethodName: HomeLoad
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12808,7 +12654,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -13042,7 +12888,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -13481,7 +13327,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -13638,7 +13484,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -13688,6 +13534,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635201159}
   m_CullTransparentMesh: 1
+--- !u!21 &1637387499
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Default UI Material (Instance) (Instance)
+  m_Shader: {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1676146166
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Default UI Material (Instance)
+  m_Shader: {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &1721681085
 GameObject:
   m_ObjectHideFlags: 0
@@ -16750,7 +16676,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -17074,6 +17000,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940622910}
   m_CullTransparentMesh: 1
+--- !u!1001 &1941713799
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1893714153558916613, guid: 47a738282cdeebf4892b0a79b15d3253, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893714153558916613, guid: 47a738282cdeebf4892b0a79b15d3253, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893714153558916613, guid: 47a738282cdeebf4892b0a79b15d3253, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893714153558916613, guid: 47a738282cdeebf4892b0a79b15d3253, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893714153558916613, guid: 47a738282cdeebf4892b0a79b15d3253, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893714153558916613, guid: 47a738282cdeebf4892b0a79b15d3253, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893714153558916613, guid: 47a738282cdeebf4892b0a79b15d3253, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893714153558916613, guid: 47a738282cdeebf4892b0a79b15d3253, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893714153558916613, guid: 47a738282cdeebf4892b0a79b15d3253, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893714153558916613, guid: 47a738282cdeebf4892b0a79b15d3253, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268051531864142528, guid: 47a738282cdeebf4892b0a79b15d3253, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 1676146166}
+    - target: {fileID: 8904422456254583875, guid: 47a738282cdeebf4892b0a79b15d3253, type: 3}
+      propertyPath: m_Name
+      value: Transiciones
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 47a738282cdeebf4892b0a79b15d3253, type: 3}
 --- !u!1 &1946249757
 GameObject:
   m_ObjectHideFlags: 0
@@ -17318,7 +17305,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -17368,17 +17355,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005692313}
   m_CullTransparentMesh: 1
---- !u!114 &2010097658 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8890636034383824901, guid: e38647e7575c8704aabb5985384af52e, type: 3}
-  m_PrefabInstance: {fileID: 633009481}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36f75ba3cb3ad60488228074a65f16b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2028711239
 GameObject:
   m_ObjectHideFlags: 0
@@ -17462,7 +17438,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -18253,7 +18229,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2010097658}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PantalladeCarga, Assembly-CSharp
         m_MethodName: load
         m_Mode: 1
@@ -18687,4 +18663,4 @@ SceneRoots:
   - {fileID: 1139127328}
   - {fileID: 933049272}
   - {fileID: 485890941}
-  - {fileID: 633009481}
+  - {fileID: 1941713799}
