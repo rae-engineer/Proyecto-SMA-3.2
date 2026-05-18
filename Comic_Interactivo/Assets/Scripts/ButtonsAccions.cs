@@ -7,4 +7,8 @@ public class ButtonsAccions : MonoBehaviour
     {
         Application.OpenURL(link);
     }
+    public void salir()
+    {
+        Application.Quit();
+    }
 }
