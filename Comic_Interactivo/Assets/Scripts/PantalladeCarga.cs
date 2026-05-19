@@ -7,6 +7,8 @@ using Unity.Loading;
 
 public class PantalladeCarga : MonoBehaviour
 {
+    SaveLoadManagerJson saveload;
+
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI loadingText;
     [SerializeField] private Animator animator;
@@ -22,6 +24,8 @@ public class PantalladeCarga : MonoBehaviour
     [SerializeField] private float loadingTime = 2f;
     [SerializeField] private int id = 2;
 
+    public bool isfirst = false;
+
     public void StartLoading()
     {
 
@@ -33,6 +37,7 @@ public class PantalladeCarga : MonoBehaviour
 
     private void Start()
     {
+        saveload = FindAnyObjectByType<SaveLoadManagerJson>();
         if (id == 0 )
         {
             StartLoading();
@@ -42,6 +47,12 @@ public class PantalladeCarga : MonoBehaviour
     public void HomeLoad()
     {
         sceneToLoad = "Home";
+        SaveLoad loadedData = saveload.LoadGame();
+        if (loadedData != null && isfirst)
+        {
+            sceneToLoad = loadedData.escena;
+        }
+        
 
         StartLoading();
 

@@ -7,6 +7,7 @@ public class loadDecision : MonoBehaviour
     public GameObject firstPanel;
     public GameObject[] panelDeciciones;
     private int escenaguardada;
+    public bool home = false;
     private void Awake()
     {
         saveload = FindAnyObjectByType<SaveLoadManagerJson>();
@@ -24,7 +25,11 @@ public class loadDecision : MonoBehaviour
             firstPanel.SetActive(false);
             panelDeciciones[escenaguardada].SetActive(true);
         }
-        
+
+        if (home)
+        {
+            panelDeciciones[3].SetActive(true);
+        }
     }
 
     // Update is called once per frame
